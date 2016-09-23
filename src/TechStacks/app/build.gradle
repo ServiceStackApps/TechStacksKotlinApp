@@ -10,12 +10,12 @@ android {
             storePassword 'a4YQOlEFprnjSOH3'
         }
     }
-    compileSdkVersion 23
+    compileSdkVersion 24
     buildToolsVersion "23.0.2"
     defaultConfig {
         applicationId "test.servicestack.net.techstackskotlin"
         minSdkVersion 16
-        targetSdkVersion 23
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
         signingConfig signingConfigs.TechStacksApp
@@ -36,13 +36,13 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:appcompat-v7:24.2.1'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'net.servicestack:android:1.0.22'
+    compile 'net.servicestack:android:1.0.27'
 }
 buildscript {
-    ext.kotlin_version = '1.0.0-beta-3595'
+    ext.kotlin_version = '1.0.4'
     repositories {
         mavenCentral()
     }
